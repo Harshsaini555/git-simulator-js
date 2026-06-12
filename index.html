@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Git State Simulator</title>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Working Area -->
+    <div class="column">
+      <h2>Working Area</h2>
+
+      <div class="top-bar">
+        <input type="text" id="fileInput" placeholder="e.g. index.html">
+        <button id="createBtn">Create</button>
+      </div>
+
+      <div id="workingArea"></div>
+    </div>
+
+    <!-- Staging Area -->
+    <div class="column">
+      <h2>Staging Area</h2>
+
+      <div class="top-bar">
+        <input type="text" id="commitInput" placeholder="Commit message">
+        <button id="commitBtn">Commit</button>
+      </div>
+
+      <div id="stagingArea"></div>
+    </div>
+
+    <!-- Commits -->
+    <div class="column">
+      <h2>Commits</h2>
+
+      <div id="commitsArea"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
